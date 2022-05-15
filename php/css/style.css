@@ -1,0 +1,120 @@
+body {
+    color: white;
+    background: url('../img/2.jpg') 0 0/100% auto repeat;
+    text-shadow: 1px 1xp 1px #4D1A52;
+    line-height: 16px;
+    font-family: 'Source Sans Pro';
+}
+
+.header {
+    background-color: #00202ecd;
+}
+
+.main_row {
+    background-color: #1f2c34a5;
+    border-radius: 2px;
+}
+
+.text_area {
+    font-size: 16px;
+    color: white;
+    font-family: Courier New, monospace;
+    background-color: #00202e;
+    height: 120px;
+    margin-top: 25px;
+    padding: 10px 20px 30px 5px;
+    border-radius: 10px;
+}
+
+.text_area:hover {
+    background-color: #021d28;
+}
+
+.hello {
+    font-weight: bold;
+}
+
+.submit {
+    margin-bottom: 50px;
+}
+
+.form {
+    max-width: 500px;
+}
+
+.name {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.name_back {
+    background-color: #001017e4;
+    font-weight: bold;
+    border-radius: 4px;
+    width: 63px;
+    height: 23px;
+    position: relative;
+    left: 2%;
+}
+
+.date {
+    background-color: #001017e4;
+    border-radius: 4px;
+    width: 154px;
+    height: 23px;
+    position: relative;
+    left: 55%;
+}
+
+.col {
+    width: 700px;
+}
+
+.main_area {
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+}
+
+.post_area {
+    background: #001017;
+    margin: 7px 10px 10px 10px;
+    padding: 10px 10px 20px 10px;
+    height: 120px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px 2px #002332;
+    position: relative;
+    right: 10px;
+    font-size: 18px;
+}
+
+.buttons {
+    position: relative;
+    right: 2%;
+}
+
+.change {
+    width: 100px;
+    position: relative;
+    bottom: 25px;
+    right: 195px;
+    margin: 0 auto;
+}
+
+.button_del {
+    position: relative;
+    right: 3%;
+}
+
+/* index */
+
+.login {
+    background-color: #00202ecc;
+    border-radius: 10px;
+}
