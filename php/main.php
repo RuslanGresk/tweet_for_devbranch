@@ -40,7 +40,6 @@
                 <?php
                 $mysql = new mysqli('host.docker.internal','root','12345','register');
                 $post = $mysql->query("SELECT * FROM `posts` ORDER BY `id` DESC");
-                $name = $mysql->query("SELECT * FROM `users`");
                 while($row = $post->fetch_assoc()):?>
                    <?php $post_date = $row['date'];
                     $post_area = $row['place'];
@@ -48,7 +47,7 @@
                     $post_id = $row['id']; 
                     ?>
 
-                    <?php if($_COOKIE['user'] == $user_name || $_COOKIE['user'] == 'Admin'):?>  
+                    <?php if($_COOKIE['user'] == $user_name || $_COOKIE['user'] == 'Admin'):?> 
                         <div class='name row'>
                             <div class='name_back col-md-8'> 
                                 <?=$user_name; ?> 
@@ -97,9 +96,9 @@
                                 <button disabled class="btn btn-dark flex-child">Редагувати</button>
                             </div>
                         </div>
-                        <?php endif; ?>
+                        <?php endif; ?> <!-- Перевірка, чи редагувалось поле -->
                             <?php
-                            if ($row['chg'] != 1){?>
+                            if ($row['chg'] != 1){?>  
                                 <div class="change">
                                     <input class="form-check-input" disabled  type="checkbox" name="check" value="yes" />
                                 </div>

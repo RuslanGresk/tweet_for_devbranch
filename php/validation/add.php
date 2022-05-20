@@ -11,7 +11,7 @@
     }
 
     $mysql = new mysqli('host.docker.internal','root','12345','register');
-    $mysql->query("INSERT INTO `posts` (`place`, `name`) VALUES ('$post', '$user')");
+    $mysql->query("INSERT INTO `posts` (`place`, `name`) VALUES ('$post', '$user')");   //В таблицю posts додаємо ім'я користувача
 
 
     header('Location: /main.php');

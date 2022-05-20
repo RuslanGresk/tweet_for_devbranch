@@ -8,8 +8,8 @@ $id = $_POST['id'];
     }
 
     $mysql = new mysqli('host.docker.internal','root','12345','register');
-    $mysql->query("UPDATE `posts` SET `place` = '$post',`chg` = '1', `date` =  NOW() WHERE `posts`.`id` = '$id'");
-
+    $mysql->query("UPDATE `posts` SET `place` = '$post',`chg` = '1', `date` =  NOW() WHERE `posts`.`id` = '$id'"); 
+    //У поле chg вносимо 1, для перевірки чи редагувалось поле.
     
     header('Location: /main.php');
 
